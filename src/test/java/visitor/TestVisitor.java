@@ -10,6 +10,7 @@ import org.junit.Test;
 public class TestVisitor {
     @Test
     public void testAccept(){
+
         ComputerPart computer = new Computer();
         computer.accept(new ComputerPartDisplayVisitor());
     }
