@@ -9,11 +9,11 @@ import java.util.Hashtable;
  */
 public class ShapeCache {
 
-    private static Hashtable<String, Shape> shapeMap = new Hashtable<String, Shape>();
+    private static Hashtable<String, AbstractShape> shapeMap = new Hashtable<String, AbstractShape>();
 
-    public static Shape getShape(String shapeId){
-        Shape cacheShape = shapeMap.get(shapeId);
-        return (Shape) cacheShape.clone();
+    public static AbstractShape getShape(String shapeId){
+        AbstractShape cacheAbstractShape = shapeMap.get(shapeId);
+        return (AbstractShape) cacheAbstractShape.clone();
     }
 
     public static void loadCache(){

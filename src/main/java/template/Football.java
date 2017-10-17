@@ -5,7 +5,7 @@ package template;
  * @Author: laven
  * @Date: 2017/10/16 上午11:48
  */
-public class Football extends Game {
+public class Football extends AbstractGame {
 
     @Override
     void initialize() {
@@ -14,11 +14,11 @@ public class Football extends Game {
 
     @Override
     void startPlay() {
-        System.out.println("Football Game Initialized! Start playing.");
+        System.out.println("Football AbstractGame Initialized! Start playing.");
     }
 
     @Override
     void endPlay() {
-        System.out.println("Football Game Started. Enjoy the game!");
+        System.out.println("Football AbstractGame Started. Enjoy the game!");
     }
 }

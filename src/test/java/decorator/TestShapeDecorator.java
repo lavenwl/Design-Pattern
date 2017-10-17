@@ -11,7 +11,7 @@ import org.junit.Test;
 public class TestShapeDecorator {
     @Test
     public void testDraw(){
-        Shape redCircle = new RedShapeDecorator(new Circle());
+        Shape redCircle = new RedAbstractShapeDecorator(new Circle());
         Assert.assertEquals("Circle", redCircle.draw());
     }
 }

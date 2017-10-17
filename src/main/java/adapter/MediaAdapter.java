@@ -7,12 +7,15 @@ package adapter;
  */
 public class MediaAdapter implements MediaPlayer {
 
+    public static final String VLC = "vlc";
+    public static final String MP4 = "mp4";
+
     AdvancedMediaPlayer advancedMediaPlayer;
 
     public MediaAdapter(String audioType){
-        if(audioType.equalsIgnoreCase("vlc")){
+        if("vlc".equalsIgnoreCase(audioType)){
             advancedMediaPlayer = new VlcPlayer();
-        }else if(audioType.equalsIgnoreCase("mp4")){
+        }else if("mp4".equalsIgnoreCase(audioType)){
             advancedMediaPlayer = new Mp4Player();
         }
     }

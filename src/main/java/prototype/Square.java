@@ -5,7 +5,7 @@ package prototype;
  * @Author: laven
  * @Date: 2017/10/11 上午11:55
  */
-public class Square extends Shape {
+public class Square extends AbstractShape {
 
     public Square() {
         type = "Square";

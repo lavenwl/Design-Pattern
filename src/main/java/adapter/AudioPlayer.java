@@ -9,13 +9,16 @@ public class AudioPlayer implements MediaPlayer {
 
     MediaAdapter mediaAdapter;
 
+    private static final String MP3 = "mp3";
+    private static final String VLC = "vlc";
+
     @Override
     public String play(String audioType, String fileName) {
         String res = "";
-        if(audioType.equalsIgnoreCase("mp3")){
+        if(MP3.equalsIgnoreCase(audioType)){
             System.out.println("Playing mp3 file. Name:" + fileName);
             res = "mp3";
-        }else if(audioType.equalsIgnoreCase("vlc") || audioType.equalsIgnoreCase("mp4")){
+        }else if(VLC.equalsIgnoreCase(audioType) || "mp4".equalsIgnoreCase(audioType)){
             mediaAdapter = new MediaAdapter(audioType);
             res = mediaAdapter.play(audioType, fileName);
         }else{

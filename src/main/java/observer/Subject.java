@@ -9,7 +9,7 @@ import java.util.List;
  * @Date: 2017/10/13 上午11:48
  */
 public class Subject {
-    private List<Observer> observers = new ArrayList<>();
+    private List<AbstractObserver> abstractObservers = new ArrayList<>();
 
     private int state;
 
@@ -19,16 +19,16 @@ public class Subject {
 
     public void setState(int state) {
         this.state = state;
-        NotifyAllObservers();
+        notifyAllObservers();
     }
 
-    public void attach(Observer observer){
-        observers.add(observer);
+    public void attach(AbstractObserver abstractObserver){
+        abstractObservers.add(abstractObserver);
     }
 
-    public void NotifyAllObservers(){
-        for(Observer observer : observers){
-            observer.update();
+    public void notifyAllObservers(){
+        for(AbstractObserver abstractObserver : abstractObservers){
+            abstractObserver.update();
         }
     }
 }

@@ -16,8 +16,8 @@ public class TestShapeCache {
     @Test
     public void testGetShape(){
         ShapeCache.loadCache();
-        Shape cloneShape1 = ShapeCache.getShape("1");
-        Shape cloneShape2 = ShapeCache.getShape("1");
-        Assert.assertNotEquals(cloneShape1,cloneShape2);
+        AbstractShape cloneAbstractShape1 = ShapeCache.getShape("1");
+        AbstractShape cloneAbstractShape2 = ShapeCache.getShape("1");
+        Assert.assertNotEquals(cloneAbstractShape1, cloneAbstractShape2);
     }
 }

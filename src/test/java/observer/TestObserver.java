@@ -12,9 +12,9 @@ public class TestObserver {
     public void testUpdate(){
         Subject subject = new Subject();
 
-        new HexaObserver(subject);
-        new OctalObserver(subject);
-        new BinaryObserver(subject);
+        new HexaAbstractObserver(subject);
+        new OctalAbstractObserver(subject);
+        new BinaryAbstractObserver(subject);
 
         System.out.println("First state change: 15");
         subject.setState(15);

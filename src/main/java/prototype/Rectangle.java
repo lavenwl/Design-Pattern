@@ -5,7 +5,7 @@ package prototype;
  * @Author: laven
  * @Date: 2017/10/11 上午11:54
  */
-public class Rectangle extends Shape {
+public class Rectangle extends AbstractShape {
 
     public Rectangle() {
         type = "Rectangle";

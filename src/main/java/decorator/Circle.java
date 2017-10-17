@@ -8,7 +8,7 @@ package decorator;
 public class Circle implements Shape {
     @Override
     public String draw() {
-        System.out.println("Shape:Circle");
+        System.out.println("AbstractShape:Circle");
         return "Circle";
     }
 }

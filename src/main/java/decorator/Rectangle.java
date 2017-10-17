@@ -8,7 +8,7 @@ package decorator;
 public class Rectangle implements Shape {
     @Override
     public String draw() {
-        System.out.println("Shape:Rectangle");
+        System.out.println("AbstractShape:Rectangle");
         return "Rectangle";
     }
 }

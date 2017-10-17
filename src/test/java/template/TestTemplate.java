@@ -10,10 +10,10 @@ import org.junit.Test;
 public class TestTemplate {
     @Test
     public void testPlay(){
-        Game game = new Cricket();
-        game.play();
+        AbstractGame abstractGame = new Cricket();
+        abstractGame.play();
         System.out.println();
-        game = new Football();
-        game.play();
+        abstractGame = new Football();
+        abstractGame.play();
     }
 }

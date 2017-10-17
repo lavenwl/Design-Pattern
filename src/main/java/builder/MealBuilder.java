@@ -1,9 +1,9 @@
 package builder;
 
-import builder.item.ChickenBurger;
+import builder.item.ChickenAbstractBurger;
 import builder.item.Coke;
 import builder.item.Pepsi;
-import builder.item.VegBurger;
+import builder.item.VegAbstractBurger;
 
 /**
  * @Description:
@@ -14,14 +14,14 @@ public class MealBuilder {
 
     public Meal prepareVegMeal(){
         Meal meal = new Meal();
-        meal.addItem(new VegBurger());
+        meal.addItem(new VegAbstractBurger());
         meal.addItem(new Coke());
         return meal;
     }
 
     public Meal prepareNonVegMeal(){
         Meal meal = new Meal();
-        meal.addItem(new ChickenBurger());
+        meal.addItem(new ChickenAbstractBurger());
         meal.addItem(new Pepsi());
         return meal;
     }

@@ -5,7 +5,7 @@ package builder.item;
  * @Author: laven
  * @Date: 2017/10/11 上午11:00
  */
-public class Coke extends coldDrink {
+public class Coke extends AbstractColdDrink {
     @Override
     public String name() {
         return "Coke";

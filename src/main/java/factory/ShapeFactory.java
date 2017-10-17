@@ -7,16 +7,20 @@ package factory;
  */
 public class ShapeFactory {
 
+    public static final String CIRCLE = "CIRCLE";
+    public static final String RECTANGLE = "RECTANGLE";
+    public static final String SQUARE = "SQUARE";
+
     //使用 getShape 方法获取形状类型的对象
     public Shape getShape(String shapeType){
         if(shapeType == null){
             return null;
         }
-        if(shapeType.equalsIgnoreCase("CIRCLE")){
+        if("CIRCLE".equalsIgnoreCase(shapeType)){
             return new Circle();
-        } else if(shapeType.equalsIgnoreCase("RECTANGLE")){
+        } else if("RECTANGLE".equalsIgnoreCase(shapeType)){
             return new Rectangle();
-        } else if(shapeType.equalsIgnoreCase("SQUARE")){
+        } else if("SQUARE".equalsIgnoreCase(shapeType)){
             return new Square();
         }
         return null;

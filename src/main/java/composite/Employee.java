@@ -34,6 +34,7 @@ public class Employee {
         return subordinates;
     }
 
+    @Override
     public String toString(){
         return (name);
     }

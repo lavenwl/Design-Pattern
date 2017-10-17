@@ -5,7 +5,7 @@ package bridge;
  * @Author: laven
  * @Date: 2017/10/11 下午4:52
  */
-public class Circle extends Shape {
+public class Circle extends AbstractShape {
 
     private int x, y, radius;
 
